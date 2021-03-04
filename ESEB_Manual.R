@@ -104,7 +104,7 @@ prediction_testing<-function(x1,x2,alpha,G2){
   dataaa<-reshape2::melt(out_total, id.var="time1")
   ggplot(dataaa, aes(x=time1, y=value, col=variable))+geom_line()+labs(title="Actual Vs Prediction Data Testing Using ESEB", y="Price", x="Time")
 }
-prediksi_testing(testing_df,df_total,0.5695562,1.080454)
+prediction_testing(testing_df,df_total,0.5695562,1.080454)
 
 load("dft_total.Rda")
 
